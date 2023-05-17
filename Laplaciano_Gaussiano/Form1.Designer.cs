@@ -41,9 +41,11 @@ namespace Laplaciano_Gaussiano
             this.OFD_img = new System.Windows.Forms.OpenFileDialog();
             this.SFD_img = new System.Windows.Forms.SaveFileDialog();
             this.PB_result = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.PB_img)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_result)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // PB_img
@@ -62,7 +64,7 @@ namespace Laplaciano_Gaussiano
             this.filtrosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(683, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1131, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -78,14 +80,14 @@ namespace Laplaciano_Gaussiano
             // abrirToolStripMenuItem
             // 
             this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
-            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
             this.abrirToolStripMenuItem.Text = "abrir";
             this.abrirToolStripMenuItem.Click += new System.EventHandler(this.abrirToolStripMenuItem_Click);
             // 
             // guardarToolStripMenuItem
             // 
             this.guardarToolStripMenuItem.Name = "guardarToolStripMenuItem";
-            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
             this.guardarToolStripMenuItem.Text = "guardar";
             this.guardarToolStripMenuItem.Click += new System.EventHandler(this.guardarToolStripMenuItem_Click);
             // 
@@ -133,11 +135,21 @@ namespace Laplaciano_Gaussiano
             this.PB_result.TabIndex = 2;
             this.PB_result.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(723, 44);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(300, 300);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(683, 365);
+            this.ClientSize = new System.Drawing.Size(1131, 365);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.PB_result);
             this.Controls.Add(this.PB_img);
             this.Controls.Add(this.menuStrip1);
@@ -149,6 +161,7 @@ namespace Laplaciano_Gaussiano
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_result)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -168,6 +181,7 @@ namespace Laplaciano_Gaussiano
         private System.Windows.Forms.OpenFileDialog OFD_img;
         private System.Windows.Forms.SaveFileDialog SFD_img;
         private System.Windows.Forms.PictureBox PB_result;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
